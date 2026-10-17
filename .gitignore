@@ -1,0 +1,43 @@
+# .NET / C#
+**/bin/
+**/obj/
+.vs/
+
+# Python
+**/.venv/
+**/venv/
+**/__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secrets
+.env
+.env.*
+!.env.example
+**/appsettings.Development.json
+**/secrets.json
+*.pfx
+*.key
+
+# AI Models
+*.safetensors
+*.gguf
+*.pt
+*.pth
+
+# Medical Data
+patient-data/
+uploads/
+*.dcm
+
+# Database
+*.bak
+*.mdf
+*.ldf
+*.db
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
