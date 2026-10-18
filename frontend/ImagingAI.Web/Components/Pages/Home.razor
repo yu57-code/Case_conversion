@@ -1,0 +1,34 @@
+﻿@page "/"
+
+<PageTitle>Imaging AI System</PageTitle>
+
+<MudContainer MaxWidth="MaxWidth.Medium" Class="mt-8">
+
+    <MudText Typo="Typo.h4">
+        Imaging AI 病例結構化系統
+    </MudText>
+
+    <MudText Class="my-4">
+        Blazor Interactive Server + MudBlazor 測試
+    </MudText>
+
+    <MudButton Variant="Variant.Filled"
+               Color="Color.Primary"
+               OnClick="TestButton">
+        測試按鈕
+    </MudButton>
+
+    <MudText Class="mt-4">
+        @message
+    </MudText>
+
+</MudContainer>
+
+@code {
+    private string message = "等待測試";
+
+    private void TestButton()
+    {
+        message = "MudBlazor 按鈕運作成功！";
+    }
+}
